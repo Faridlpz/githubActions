@@ -5,6 +5,8 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - name: CI
+        uses: actions/checkout@v4
       - name: Lint Action  
         uses: wearerequired/lint-action@v2.3.0
   test:
